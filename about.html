@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about us</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- FONTS -->
+     
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body style=" height: 100%; padding-top: 0%;">
+    <div class="scroll-up-btn">
+      <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar" style="padding-left: 4%; padding-right: 4%; position: sticky;">
+      <div class="navbar-left">
+          <a href="index.html" class="navbar-icon">
+              <img src="Foundation logo - Final - white-12.png" alt="Icon">
+          </a>
+      </div>
+      <div class="navbar-center">
+          <ul class="navbar-menu">
+              <li><a href="index.html"><strong>Home</strong></a></li>
+              <li><a href="about.html"><strong>About</strong></a></li>
+              <li><a href="athelets.html"><strong>Our Athelets</strong></a></li>
+              <li><a href="work.html"><strong>Work</strong></a></li>
+              <li><a href="contact.html"><strong>Contact Us</strong></a></li>
+          </ul>
+      </div>
+      <div class="navbar-right">
+          <a href="donation.html" class="donate-button">Donate</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+  </nav>
+  
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="index.html"><strong>Home</strong></a></li>
+      <li><a href="about.html"><strong>About</strong></a></li>
+      <li><a href="athelets.html"><strong>Our Athelets</strong></a></li>
+      <li><a href="work.html"><strong>Work</strong></a></li>
+      <li><a href="contact.html"><strong>Contact Us</strong></a></li>
+    </ul>
+  </div>
+  
+  
+  <script>
+  // Toggle Mobile Menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  // Toggle menu on click
+  hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+  });
+  </script>
+    <section class="page" style="position: relative; padding-top: 0%; background-size: cover; background-position: center; height: 200vh; width: 100%;">
+      <section id="about" style="padding-left: 5%; padding-right: 5%; padding-top: 0%; padding-bottom: 10%; color: #000; font-family: 'Open Sans', sans-serif; font-size: 1.5em; font-weight: 400; align-items: center; width: 100%;">
+        <div class="row">
+          <div class="col">
+            <h1 style="color: #0c6464; padding-top: 15%; font-family: 'Josefin Sans', sans-serif; font-size: 5rem; font-weight: bolder;">Our Philosophy</h1>
+            <p class="philo" style="text-align: justify; color: #000; font-family: 'Open Sans', sans-serif; font-size: 1.10em; font-weight: 400; align-items: center;">
+                &#8194;&#8194; True athletic greatness is forged not only in the pursuit of victory but in the relentless commitment to growth,
+               resilience, and the spirit of unity that uplifts both self and community.<br><br>
+               &#8194;&#8194;At Lakshyan Foundation, we empower athletes to pursue their dreams by providing them with a nurturing environment and 
+               the right support at every stage. Our focus extends beyond just performance, we are committed to developing well-rounded 
+               individuals who not only achieve sporting excellence but also contribute to their communities and inspire future generations.
+                Together, we are building a brighter future for sports and creating a positive impact in the lives of many.
+            </p>
+          </div>
+          <div class="col" style="margin-top: 15%;"><img src="./resources/coverpage.png" alt="" width="100%" /></div>
+        </div>
+      </section>
+  
+      <section id="vision" style="padding-top: 5%; padding-bottom: 5%; margin-left: auto; margin-right: auto; text-align: center; width: 100%; background-color: rgba(245, 245, 245, 0);">
+        <div class="div-vision" style="width: 90%; margin-left: auto; margin-right: auto; margin-top: 5%; margin-bottom: 5%;">
+          <h2 style="color: #0c6464; font-family: 'Josefin Sans', sans-serif; font-size: 5rem; font-weight: bolder;">Our Vision</h2>
+          <p style="text-align: justify; font-size: 2rem; font-weight: 500;">
+            To become a leading institution in nurturing world-class athletes by fostering excellence, inclusivity, and growth. Our goal is to elevate 
+            Indian sports to global recognition, inspiring athletes to reach their full potential and positively impact their communities and the nation.
+          </p>
+        </div>
+        <div class="div-vision" style="width: 90%; margin-left: auto; margin-right: auto; margin-top: 5%; margin-bottom: 5%;">
+          <h2 style="color: #0c6464; font-family: 'Josefin Sans', sans-serif; font-size: 5rem; font-weight: bolder;">Our Mission</h2>
+          <p style="text-align: justify; font-size: 2rem; font-weight: 500;">
+            To provide top-tier coaching, facilities, and holistic support, fostering athletes' skill development
+            and character growth. We promote sportsmanship, discipline, and resilience, empowering athletes from diverse backgrounds to excel and contribute
+            to both the sports community and society.
+          </p>
+        </div>
+      </section>
+  
+      <section id="team" style="margin-top: 10%; margin-bottom: 5%; margin-left: auto; margin-right: auto; text-align: center; width: 90%;">
+        <div class="row" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+            <h2 style="color: #0c6464; font-family: 'Josefin Sans', sans-serif; font-size: 5rem; font-weight: bolder; margin-bottom: 5%; width: 100%; text-align: center;">Our Team</h2>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 team-member" style="text-align: center;">
+                <img src="./resources/yashika.jpg" alt="employee-image" class="team-img" style="border-radius: 50%; width: 300px;">
+                <h3 style="font-size: 2rem; font-weight: 500;">L. Yashica</h3>
+                <p style="font-size: 1.4rem; font-weight: 500;">A former basketball champion, L. Yashica nurtures the potential of India’s future generations of athletes through her work at Lakshyan.</p>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 team-member" style="text-align: center;">
+                <img src="./resources/jeevan.jpg" alt="employee-image" class="team-img" style="border-radius: 50%; width: 300px;">
+                <h3 style="font-size: 2rem; font-weight: 500;">Jeevan Mahadevu</h3>
+                <p style="font-size: 1.4rem; font-weight: 500;">Jeevan Mahadevu is an engineer who has channeled his passion into creating a state-of-the-art sporting facility to help athletes train to compete at the highest level.</p>
+            </div>
+        </div>
+      </section>
+    </section>
+
+    <footer style="margin-top: 100%;">
+      <div class="content">
+        <div class="top">
+          <div class="logo-details" style="display: flex; flex-direction: row; text-align: center; justify-content: center;">
+            <img src="Foundation logo - Final - white-12.png" style="height: 90px;">
+            <span class="logo_name" style="padding-top: 30px;">&nbsp; &nbsp;Lakshyan Foundation</span>
+          </div>
+          <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="link-boxes">
+          <ul class="box">
+            <li class="link_name">Quick Links</li>
+            <li><a href="about.html">About US</a></li>
+            <li><a href="work.html">Our Work</a></li>
+            <li><a href="donation.html">Donate</a></li>
+           
+          </ul>
+          <ul class="box">
+            <li class="link_name">Contact info</li>
+            <li><a href="https://maps.app.goo.gl/HdWMd3FMfgdm2P1Y9" style="text-align: justify;">LakshyanAcademy of Sports Pvt. Ltd,No.126/5,Sulikunte Village,
+              SarjapurMain Road,
+              Varthur,Hobli,
+              Bangalore- 562125<br>
+              +917022314523
+              +918069031500
+              www.lakshyanfoundation.com</a></li>
+            
+          </ul>
+         
+          <ul class="box input-box">
+            <li class="link_name">Subscribe</li>
+            <li><input type="text" placeholder="Enter your email"></li>
+            <li><input type="button" value="Subscribe"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-details">
+        <div class="bottom_text">
+          <span class="copyright_text">Copyright © 2024 <a href="#">Lakshyan Foundation.</a>All rights reserved</span>
+          <span class="policy_terms">
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms & condition</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js" ></script>
+    <!-- Add this before any script that uses $ (like your index.js) -->
+
+
+  </body>
+</html>

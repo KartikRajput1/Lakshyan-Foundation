@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Our Athelets</title>
+    <link rel="stylesheet" href="athelets.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- Font Awesome 6 Free (Solid) CDN -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="index.js" ></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+</head>
+<body>
+  <div class="scroll-up-btn">
+    <i class="fas fa-angle-up"></i>
+  </div>
+  <nav class="navbar" style="padding-left: 4%; padding-right: 4%; position: sticky;">
+    <div class="navbar-left">
+        <a href="index.html" class="navbar-icon">
+            <img src="Foundation logo - Final - white-12.png" alt="Icon">
+        </a>
+    </div>
+    <div class="navbar-center">
+        <ul class="navbar-menu">
+            <li><a href="index.html"><strong>Home</strong></a></li>
+            <li><a href="about.html"><strong>About</strong></a></li>
+            <li><a href="athelets.html"><strong>Our Athelets</strong></a></li>
+            <li><a href="work.html"><strong>Work</strong></a></li>
+            <li><a href="contact.html"><strong>Contact Us</strong></a></li>
+        </ul>
+    </div>
+    <div class="navbar-right">
+        <a href="donation.html" class="donate-button">Donate</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <ul>
+    <li><a href="index.html"><strong>Home</strong></a></li>
+    <li><a href="about.html"><strong>About</strong></a></li>
+    <li><a href="athelets.html"><strong>Our Athelets</strong></a></li>
+    <li><a href="work.html"><strong>Work</strong></a></li>
+    <li><a href="contact.html"><strong>Contact Us</strong></a></li>
+  </ul>
+</div>
+
+
+<script>
+// Toggle Mobile Menu
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+
+// Toggle menu on click
+hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+});
+</script>
+  <section id="profile-section" style="margin: 5%;" >
+    <h2 style="font-size: 4rem;">Our Athelets</h2>
+        <div id="profile">
+        <div class="card" style="width: 18rem; position:static;">
+            <img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mr. Apoorv Kamble</h5><br>
+              <!-- <a href="#" class="btn btn-primary">Know More</a> -->
+              <a class="btn btn-primary" href="#popup1">Know More</a>
+            </div>
+          </div>
+          
+          <div class="card" style="width: 18rem; position:static;">
+            <img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ms. Shreya Rajesh</h5><br>
+              <a class="btn btn-primary" href="#popup2">Know More</a>
+            </div>
+          </div>
+    
+          <div class="card" style="width: 18rem; position:static;">
+            <img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mr. Dandu Venkatesh</h5><br>
+             <a class="btn btn-primary" href="#popup3">Know More</a>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <div id="popup1" class="overlay">
+      <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <div class="content" style="padding: 3%;">
+            <div class="scroll-box">
+               <img src="./resources/apoorv.jpg" 
+               alt="Athlete Image" class="athlete-image">
+              <h2 style="font-weight: 900; font-size: 1.8rem;">Program: ‘Namma’ Chess Scholarship Program</h2>
+              <h2 style="font-weight: 900; font-size: 1.8rem;">Athlete Name: Mr. Apoorv Kamble</h2>
+              <h2 style="font-weight: 900; font-size: 1.8rem;">Sport: Chess</h2>
+              <h2 style="font-weight: 900; font-size: 1.8rem;">Scholarship period: Since May 2023</h2>
+              <h2 style="font-weight: 900; font-size: 1.8rem;">Program Overview:</h2>
+              <ul class="custom-list" style="font-size: 1.8rem;">
+                  <li>Fully funded scholarship program</li>
+                  <li>Provide coaching sessions under the guidance of expert coaches at no cost</li>
+                  <li>Cover travel and stay expenses for shortlisted international tournaments</li>
+                  <li>Mentorship and guidance from chess grandmasters</li>
+                  <li>Access to state-of-the-art facilities for the best coaching</li>
+              </ul>
+              <br>
+              <h2 style="font-weight: 900; font-size: 1.8rem;">Athlete Achievements:</h2>
+              <ul class="custom-list" style="font-size: 1.8rem;">
+                  <li>Became state Senior blitz, U15 Open & U19 Open champion during 2023-24</li>
+                  <li>Gained Candidate Master (CM) title in September 2023</li>
+                  <li>Gained Fide Master (FM) title in February 2024</li>
+                  <li>India Active players ranking - moved up from >500 to 119th place in India</li>
+                  <li>Karnataka State Blitz Rated Chess Championship 2023 - 1st Place</li>
+                  <li>MDCC 1st International FIDE Rated Open Chess Tournament 2023 - 1st Place</li>
+                  <li>1st Namma Sub Junior Karnataka U15 Rapid Chess Tournament 2023 - 1st Place</li>
+                  <li>Karnataka State U-19 & U15 Fide Rated Open Chess Championship 2023 - 1st Place</li>
+                  <li>52nd National Junior (U-19) Chess Championship 2023 - 6th Place</li>
+                  <li>1st Bangalore International Grandmasters Open Chess Tournament 2024 (Category A) - 2nd Place (Drew with 2 Grandmasters & 2 International Masters)</li>
+                  <li>National Rapid Chess Championship 2023-24 - 39th Place</li>
+                  <li>Overall increase: 388 Standard points, 204 Rapid Blitz points & 328 Blitz rating points</li>
+              </ul>
+          </div>
+      </div>
+      </div>
+   </div>
+   
+    
+
+    <div id="popup2" class="overlay">
+      <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <div class="content" style="padding: 3%;">
+            <div class="scroll-box">
+               <img src="./resources/shreya.jpg" 
+               alt="Athlete Image" class="athlete-image">
+              <h2 style="font-weight: 900; font-size: 1.8rem;">Program: ‘Namma’ Chess Scholarship Program</h2>
+              <h2 style="font-weight: 900; font-size: 1.8rem;">Athlete Name: Ms. Shreya Rajesh</h2>
+              <h2 style="font-weight: 900; font-size: 1.8rem;">Sport: Chess</h2>
+              <h2 style="font-weight: 900; font-size: 1.8rem;">Scholarship period: Since May 2023</h2>
+              <h2 style="font-weight: 900; font-size: 1.8rem;">Program Overview:</h2>
+              <ul class="custom-list" style="font-size: 1.8rem;">
+                  <li>Fully funded scholarship program</li>
+                  <li>Provide coaching sessions under the guidance of expert coaches at no cost</li>
+                  <li>Cover travel and stay expenses for shortlisted international tournaments</li>
+                  <li>Mentorship and guidance from chess grandmasters</li>
+                  <li>Access to state-of-the-art facilities for the best coaching</li>
+              </ul>
+              <br>
+              <h2 style="font-weight: 900; font-size: 1.8rem;">Athlete Achievements:</h2>
+              <ul class="custom-list" style="font-size: 1.8rem;">
+                  <li>9th ICA Open Below 1600 - Fide Rating - 1st place</li>
+                  <li>Karnataka State U-11 Girls Chess Championship - 3rd place</li>
+                  <li>1st National Schools Team Chess Championship - 2nd place</li>
+                  <li>Karnataka State U-15 Girls FIDE Rating Championship 2023 - 6th place</li>
+                  <li>Karnataka State U-13 Girls FIDE Rating Championship 2023 - 5th place</li>
+                  <li>Tal Memorial Rapid FIDE Rating Chess Championship - 1st place</li>
+                  <li>Mark Dvoretsky Memorial Rapid FIDE Rating Chess Tournament - 1st place</li>
+                  <li>36th National U-13 Girls Chess Championship 2023 - 57th place</li>
+                  <li>Bangalore International Open GM Chess Tournament 2024 (Category ‘B’) - 3rd Place</li>
+                  <li>Karnataka State U-17 Girls Championship 2024 - 4th place</li>
+                  <li>Karnataka State Women’s Championship June 2024 - 3rd place</li>
+                  <li>Karnataka State U-13 Girls Championship 2024 - 7th place</li>
+                  <li>Karnataka State U-19 Girls Championship 2024 - 10th place</li>
+                  <li>Karnataka State U-11 Girls Championship 2024 - 5th place</li>
+              </ul>
+            </div>
+          </div>
+      </div>
+   </div>
+   
+
+   <div id="popup3" class="overlay">
+      <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <div class="content" style="padding: 3%;">
+              <div class="scroll-box">
+               <img src="./resources/dandu.jpg" 
+               alt="Athlete Image" class="athlete-image">
+                  <h2 style="font-weight: 900; font-size: 1.8rem;">Program: Athlete Tournament Support</h2>
+                  <h2 style="font-weight: 900; font-size: 1.8rem;">Athlete Name: Mr. Dandu Venkatesh</h2>
+                  <h2 style="font-weight: 900; font-size: 1.8rem;">Sport: Swimming</h2>
+                  <h2 style="font-weight: 900; font-size: 1.8rem;">Scholarship period: September 2024</h2>
+                  <h2 style="font-weight: 900; font-size: 1.8rem;">Program Overview:</h2>
+                  <ul class="custom-list" style="font-size: 1.8rem;">
+                      <li>Support during Senior State Meet Championship 2024</li>
+                      <li>Covered Boarding, Travelling, and Food costs during the tournament</li>
+                  </ul>
+                  <br>
+                  <h2 style="font-weight: 900; font-size: 1.8rem;">Athlete Achievements:</h2>
+                  <ul class="custom-list" style="font-size: 1.8rem;">
+                      <li>Senior State Meet qualifications:
+                          <ul>
+                              <li>50M Backstroke Event - Gold</li>
+                              <li>100M Backstroke Event - Gold</li>
+                              <li>50M Butterfly Event - Gold</li>
+                              <li>50M Freestyle Event - Silver</li>
+                          </ul>
+                      </li>
+                      <br>
+                      <li>Senior State Meet Main Championship 2024:
+                          <ul>
+                              <li>50M Backstroke Event - 9th place</li>
+                              <li>100M Backstroke Event - 9th place</li>
+                              <li>Backstroke Relay Event - 7th place</li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+   </div>
+   <footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details" style="display: flex; flex-direction: row; text-align: center; justify-content: center;">
+          <img src="Foundation logo - Final - white-12.png" style="height: 90px;">
+          <span class="logo_name" style="padding-top: 30px;">&nbsp; &nbsp;Lakshyan Foundation</span>
+        </div>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">Quick Links</li>
+          <li><a href="about.html">About US</a></li>
+          <li><a href="work.html">Our Work</a></li>
+          <li><a href="donation.html">Donate</a></li>
+         
+        </ul>
+        <ul class="box">
+          <li class="link_name">Contact info</li>
+          <li><a href="https://maps.app.goo.gl/HdWMd3FMfgdm2P1Y9" style="text-align: justify;">LakshyanAcademy of Sports Pvt. Ltd,No.126/5,Sulikunte Village,
+            SarjapurMain Road,
+            Varthur,Hobli,
+            Bangalore- 562125<br>
+            +917022314523
+            +918069031500
+            www.lakshyanfoundation.com</a></li>
+          
+        </ul>
+       
+        <ul class="box input-box">
+          <li class="link_name">Subscribe</li>
+          <li><input type="text" placeholder="Enter your email"></li>
+          <li><input type="button" value="Subscribe"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2024 <a href="#">Lakshyan Foundation.</a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

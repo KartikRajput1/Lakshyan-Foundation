@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- <link rel="stylesheet" href="nav-footer.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    
+</head>
+<body id="container">
+    <div class="scroll-up-btn">
+      <i class="fas fa-angle-up"></i>
+    </div>
+  
+    <!-- Header -->
+    <nav class="navbar" style="padding-left: 4%; padding-right: 4%; position: sticky;">
+      <div class="navbar-left">
+          <a href="index.html" class="navbar-icon">
+              <img src="Foundation logo - Final - white-12.png" alt="Icon">
+          </a>
+      </div>
+      <div class="navbar-center">
+          <ul class="navbar-menu">
+              <li><a href="index.html"><strong>Home</strong></a></li>
+              <li><a href="about.html"><strong>About</strong></a></li>
+              <li><a href="athelets.html"><strong>Our Athelets</strong></a></li>
+              <li><a href="work.html"><strong>Work</strong></a></li>
+              <li><a href="contact.html"><strong>Contact Us</strong></a></li>
+          </ul>
+      </div>
+      <div class="navbar-right">
+          <a href="donation.html" class="donate-button">Donate</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="index.html"><strong>Home</strong></a></li>
+      <li><a href="about.html"><strong>About</strong></a></li>
+      <li><a href="athelets.html"><strong>Our Athelets</strong></a></li>
+      <li><a href="work.html"><strong>Work</strong></a></li>
+      <li><a href="contact.html"><strong>Contact Us</strong></a></li>
+    </ul>
+</div>
+
+
+<script>
+  // Toggle Mobile Menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  // Toggle menu on click
+  hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+  });
+</script>
+    <section class="home" id="home" style="display: flex; align-items: center; justify-content: center; min-height: 90vh; text-align: center; padding: 20px;">
+      <div style="width: 100%; max-width: 600px; margin: auto;">
+        <div class="home-content" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+          <img src="Foundation logo - Final - white-12.png" alt="Foundation Logo" style="width: 100%; max-width: 350px; height: auto;">
+          <span class="typing" style="font-size: 2.5vw; font-weight: bold; margin-top: 20px;"></span>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!--  About  -->
+    <section class="about" class="container" id="about">
+      <div class="max-width">
+        <h2 class="title">What we believe in</h2>
+        <div class="about-content">
+          <div class="column left">
+            <img  src="about.png" alt="Profile Image 626x626">
+          </div>
+          <div class="column right">
+            <div class="text"><h2>About Us</h2></div>
+            <p>At Lakshyan Foundation, we support athletes in achieving their dreams by offering a nurturing environment and comprehensive support. Our commitment goes beyond performance; we aim to develop well-rounded individuals who excel in sports, contribute to their communities, and inspire future generations. Together, we're shaping a brighter future for sports and making a positive impact on many lives.
+
+            </p>
+            <a href="about.html">Learn More</a>
+            
+        </div>
+      </div>
+    </section>
+
+     <!-- team -->
+    <section class="team" class="container" id="about">
+      <div class="max-width">
+      
+        <div class="about-content">
+          <div class="column left">
+            <div class="text"><h2>Team</h2></div>
+            <p>At Lakshyan Foundation, we support athletes in achieving their dreams by offering a nurturing environment and comprehensive support. Our commitment goes beyond performance; we aim to develop well-rounded individuals who excel in sports, contribute to their communities, and inspire future generations. Together, we're shaping a brighter future for sports and making a positive impact on many lives.
+
+            </p>
+            <a href="contact.html">Learn More</a>
+            
+        </div>
+          <div class="column right">
+            <img  src="about.png" alt="Profile Image 626x626">
+          </div>
+          
+      </div>
+    </section>
+  
+    
+    <!-- Skills -->
+    <section class="skills" id="skills">
+      <div class="max-width">
+        <h2 class="title">Our Collabrations</h2>
+        <div class="skills-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+             nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+               in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                 inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                   voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                    consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+                     magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                      corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
+                       iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum
+                        qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio
+                         dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos
+                          dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique 
+                          sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et 
+                          harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
+                           nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere
+                            possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem
+                             quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
+                              voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic
+                               tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur
+                                aut perferendis doloribus asperiores repellat.
+
+          </p>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Projects -->
+   
+          <section class="projects" style="position: relative; padding-top: 15%; min-height: 95vh; display: flex; align-items: center; justify-content: center; text-align: center;">
+            <!-- Background Image Container -->
+             <div class="max-width" >
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('home_bg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+              <!-- Dark Overlay -->
+              <div style="position: absolute; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.75);"></div>
+            </div>
+          
+            <!-- Centered Content -->
+            <div style="position: relative; color: white; z-index: 1;">
+              <h1 style="font-size: 3rem; font-weight: bold;">LET'S MAKE A<span style="color: #fbfbfb;"> DIFFERENCE!</span></h1>
+              <p style="margin-top: 20px; font-size: 1.25rem; color: #d1d5db;">
+                To promote physical fitness, healthy lifestyle and improve social & cognitive skills among children.
+              </p>
+              <h2 style="font-size: 14px; text-transform: uppercase; letter-spacing: 3px; margin-top: 70px; margin-bottom: 20px;">
+                <a href="donation.html" style="display: inline-block; padding: 10px 20px; background-color: #f8f8f716; color: white; text-decoration: none; border-radius: 4px;">
+                  Let's Start
+                </a>
+              </h2>
+            </div>
+          </div>
+          </section>
+  
+
+    <footer>
+      <div class="content">
+        <div class="top">
+          <div class="logo-details">
+            <img src="Foundation logo - Final - white-12.png" style="height: 90px;">
+            <span class="logo_name">&nbsp; &nbsp;Lakshyan Foundation</span>
+          </div>
+          <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="link-boxes">
+          <ul class="box">
+            <li class="link_name">Quick Links</li>
+            <li><a href="about.html">About US</a></li>
+            <li><a href="work.html">Our Work</a></li>
+            <li><a href="donation.html">Donate</a></li>
+           
+          </ul>
+          <ul class="box">
+            <li class="link_name">Contact info</li>
+            <li><a href="https://maps.app.goo.gl/HdWMd3FMfgdm2P1Y9" style="text-align: justify;">LakshyanAcademy of Sports Pvt. Ltd,No.126/5,Sulikunte Village,
+              SarjapurMain Road,
+              Varthur,Hobli,
+              Bangalore- 562125<br>
+              +917022314523
+              +918069031500
+              www.lakshyanfoundation.com</a></li>
+            
+          </ul>
+         
+          <ul class="box input-box">
+            <li class="link_name">Subscribe</li>
+            <li><input type="text" placeholder="Enter your email"></li>
+            <li><input type="button" value="Subscribe"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-details">
+        <div class="bottom_text">
+          <span class="copyright_text">Copyright © 2024 <a href="#">Lakshyan Foundation.</a>All rights reserved</span>
+          <span class="policy_terms">
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms & condition</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js" ></script>
+  </body>
+</html>

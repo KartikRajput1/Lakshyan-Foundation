@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for both slider and box */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+/* Slider Wrapper */
+#wrapper {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 2px solid #06D85F;
+    border-radius: 20px;
+}
+
+/* Slider image box */
+#imgBox {
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease-in-out;
+}
+
+/* Navigation buttons */
+#prev, #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    color: #333;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 2px #111;
+    border: none;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+/* Popup box */
+.box {
+    border: 2px solid #06D85F;
+    border-radius: 20px;
+    width: 90%;
+    text-align: center;
+}
+
+.box .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5%;
+}
+.button {
+    color: #fff;
+    border-radius: 20px;
+    width: 30vw;                  /* Width set to 50% of viewport width */
+    height: 30vw;  
+    /* width: 640px; 
+    height: 640px; */
+    max-width: 640px;             /* Max width */
+    max-height: 640px; 
+    border: 10px solid #06D85F;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center center;
+    transition: all 0.3s ease-out;
+    display: flex;                /* Enable flexbox */
+    justify-content: center;      /* Center horizontally */
+    align-items:flex-end;          /* Center vertically */
+    text-align: center;   
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    background-size: cover;       /* Make background cover the entire button */
+    background-position: center;  /* Center the background image */
+    background-repeat: no-repeat;
+    /* opacity: 0.7; */
+}
+@media (max-width: 640px) {
+    .button {
+        width: 50vw;             /* Increase size on smaller screens */
+        height: 50vw;
+        font-size: 1rem;         /* Adjust font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .box .row {
+        flex-direction: column;         /* Stack buttons vertically */
+        align-items: center;            /* Center buttons in column */
+        gap: 20px;                      /* Add spacing between buttons */
+        
+    }
+    .button {
+        width: 40vw;
+        height: 60vw;
+    }
+}
+.button:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+    box-shadow: 0px 4px 100px #06D85F; /* Add a shadow effect */
+    border: 5px solid #06D85F;
+    border-radius: 20px;
+}
+
+/* Overlay and popup content */
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 500ms;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    position: relative;
+    margin: 100px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    width: 80%;
+    height: fit-content;
+    text-align: justify;
+}
+
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 100%) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #wrapper, .box {
+        width: 100%;
+    }
+    #imgBox {
+        height: 40vh;
+    }
+}
+.custom-list {
+    list-style-type: square; /* Options: disc, circle, square, etc. */
+}
+
+.scroll-box {
+    height: 700px;       /* Set the desired height */
+    overflow-y: scroll;  /* Add vertical scrollbar */
+}

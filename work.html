@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome 6 Free (Solid) CDN -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <title>Work</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js" ></script>
+    <link rel="stylesheet" href="work.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="work.js"></script>
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+      </div>
+    <nav class="navbar" style="padding-left: 4%; padding-right: 4%; position: sticky;">
+        <div class="navbar-left">
+            <a href="index.html" class="navbar-icon">
+                <img src="Foundation logo - Final - white-12.png" alt="Icon">
+            </a>
+        </div>
+        <div class="navbar-center">
+            <ul class="navbar-menu">
+                <li><a href="index.html"><strong>Home</strong></a></li>
+                <li><a href="about.html"><strong>About</strong></a></li>
+                <li><a href="athelets.html"><strong>Our Athelets</strong></a></li>
+                <li><a href="work.html"><strong>Work</strong></a></li>
+                <li><a href="contact.html"><strong>Contact Us</strong></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <a href="donation.html" class="donate-button">Donate</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="index.html"><strong>Home</strong></a></li>
+        <li><a href="about.html"><strong>About</strong></a></li>
+        <li><a href="athelets.html"><strong>Our Athelets</strong></a></li>
+        <li><a href="work.html"><strong>Work</strong></a></li>
+        <li><a href="contact.html"><strong>Contact Us</strong></a></li>
+      </ul>
+    </div>
+    
+    
+    <script>
+    // Toggle Mobile Menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    // Toggle menu on click
+    hamburger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+    });
+    </script>
+    <section class="flex-container">
+        <!-- Slider Wrapper -->
+        <!-- <div id="wrapper">
+            <div id="imgBox"></div>
+            <button id="prev" onclick="prev()">&#9664;</button>
+            <button id="next" onclick="next()">&#9654;</button>
+        </div> -->
+    
+        <!-- Popup Box -->
+        <div class="box">
+            <div class="row">
+            <a class="button" href="#popup1" style="background-image: url(/resources/sports.jpg);">Kreeda Jagrithi </a>
+            <a class="button" href="#popup2" style="background-image: url(/resources/chess.jpg); color: white;">Chess</a>
+            </div>
+            <div class="row">
+            <a class="button" href="#popup3" style="background-image: url(/resources/swim.jpg); color: #75f127; " >Swimming</a>
+            <a class="button" href="#popup4" style="background-image: url(/resources/soon.jpg); "></a>
+            </div>
+            <!-- <div class="row">
+            <a class="button" href="#popup1"><img src="lf.jpg" alt="" ></a>
+            <a class="button" href="#popup1"><img src="lf.jpg" alt="" ></a>
+            </div> -->
+        </div>
+    </section>
+    
+    <!-- Popup Modal -->
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <div class="content" style="padding: 3%; ">
+                <div class="scroll-box">
+                <h2 style="font-weight: 900;">Kreeda Jagrithi</h2>
+                <p style="font-size: 1.8rem;">&#8194;&#8194;At Lakshyan Foundation, we are committed to building a vibrant community 
+                    that uplifts young underprivileged children through the enriching journey of physical literacy. 
+                    Kreeda Jagrithi is our flagship initiative, designed to discover and nurture talent while offering
+                     a holistic approach to training that emphasizes physical development, teamwork, and personal 
+                     growth. <br><br>
+                     &#8194;&#8194;Our goal is to empower children to emerge as well-rounded individuals who excel not just in 
+                    sports but in every aspect of life. We aim to create a robust framework that supports their 
+                    evolution from mastering essential movement skills to fostering a lifelong commitment to fitness
+                     and sportsmanship</p>    
+                     <h2 style="font-weight: 900;">OBJECTIVE</h2>
+                     <ul class="custom-list" style="font-size: 1.8rem;">
+                        <li>
+                            To promote physical fitness, healthy lifestyle and improve social & 
+                            cognitive skills among children.
+                        </li>
+                        <li>
+                            Encouraging the development of team spirit among students by engaging 
+                            individuals from social and economic backgrounds through sports
+                        </li>
+                     </ul>
+
+                     <h2 style="font-weight: 900;">TARGET AUDIENCE </h2>
+                     <p style="font-size: 1.8rem;">&#8194;&#8194;Covering the radius around Sarjapur Road 5 schools were shortlisted for the initiation 
+                        of the program in Government Schools. The following schools are considered. </p>
+                     <ul class="custom-list" style="font-size: 1.8rem;">
+                        <li>
+                            Higher Primary School, Doddakannelli
+                        </li>
+                        <li>
+                            Higher Primary School, Sulikunte
+                        </li>
+                        <li>
+                            Higher Primary School, Kodathi 
+                        </li>
+                        <li>
+                            Higher Primary School, Dommasandra
+                        </li>
+                     </ul>
+                     <h2 style="font-weight: 900;">Methodology used</h2>
+                     <div class="method-img" style="display: flex; width: 100%; flex-direction: row; justify-content: center;">
+                        <img src="./resources/method.jpg" style="align-self: center;" alt="">
+                     </div>
+                     
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    
+    <div id="popup2" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <div class="content" style="padding: 3%; ">
+                <h2 style="font-weight: 900; font-size: 1.8rem;">Namma Chess Scholarship</h2>
+                <p style="font-size: 1.8rem;">&#8194;&#8194;Lakshyan Foundation is proud to launch the Namma Chess Scholarship Programme 
+                    in partnership with the Karnataka Chess Federation—a transformative initiative 
+                    aimed at nurturing the next generation of chess champions from Karnataka. This
+                     programme goes beyond traditional support; it offers these athletes full access to 
+                     financial assistance, expert coaching, and strategic resources needed to compete at
+                      higher levels and achieve their dreams. Lakshyan Foundation believes in creating 
+                      meaningful pathways for grassroots talent, empowering these athletes to become symbols 
+                      of inspiration for countless others across the state and beyond.</p>    
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div id="popup3" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <div class="content" style="padding: 3%; ">
+                <h2 style="font-weight: 900; font-size: 1.8rem;">Swimming</h2>
+                <p style="font-size: 1.8rem;">&#8194;&#8194;Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                     in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                      mollit anim id est laborum.
+                </p>    
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div id="popup4" class="overlay">
+        <div class="popup">
+            <h2>Popup Title 4</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <p>This is a popup content example.</p>    
+            </div>
+        </div>
+    </div>
+
+
+    <footer >
+        <div class="content">
+          <div class="top">
+            <div class="logo-details" style="display: flex; flex-direction: row; text-align: center; justify-content: center;">
+              <img src="Foundation logo - Final - white-12.png" style="height: 90px;">
+              <span class="logo_name" style="padding-top: 30px;">&nbsp; &nbsp;Lakshyan Foundation</span>
+            </div>
+            <div class="media-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="link-boxes" >
+            <ul class="box" style="border-style: none; text-align: left;">
+              <li class="link_name">Quick Links</li>
+              <li><a href="about.html">About US</a></li>
+              <li><a href="work.html">Our Work</a></li>
+              <li><a href="donation.html">Donate</a></li>
+             
+            </ul>
+            <ul class="box" style="border-style: none; text-align: left;">
+              <li class="link_name">Contact info</li>
+              <li><a href="https://maps.app.goo.gl/HdWMd3FMfgdm2P1Y9" style="text-align: justify;">LakshyanAcademy of Sports Pvt. Ltd,No.126/5,Sulikunte Village,
+                SarjapurMain Road,
+                Varthur,Hobli,
+                Bangalore- 562125<br>
+                +917022314523
+                +918069031500
+                www.lakshyanfoundation.com</a></li>
+              
+            </ul>
+           
+            <ul class="box input-box" style="border-style: none; text-align: left;">
+              <li class="link_name">Subscribe</li>
+              <li><input type="text" placeholder="Enter your email"></li>
+              <li><input type="button" value="Subscribe"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom-details">
+          <div class="bottom_text">
+            <span class="copyright_text">Copyright © 2024 <a href="#">Lakshyan Foundation.</a>All rights reserved</span>
+            <span class="policy_terms">
+              <a href="#">Privacy policy</a>
+              <a href="#">Terms & condition</a>
+            </span>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

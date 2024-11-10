@@ -1,0 +1,116 @@
+
+.card-img-top {
+  width: 60%;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.card {
+  
+  padding: 1.5em 0.5em 0.5em;
+  text-align: center;
+  border-radius: 2em;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+.card-title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.btn-primary {
+  border-radius: 2em;
+  padding: 0.5em 1.5em;
+  background-color: blue;
+  color: white;
+ 
+}
+
+#profile{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  font-size: 1rem;
+ 
+}
+#profile-section{
+  padding: 10%;
+  border: 5px solid black;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 3rem;
+}
+
+/* Overlay and popup content */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  opacity: 0;
+  
+  transition: opacity 500ms;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  position: relative;
+  margin: 100px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  width: 80%;
+  height: fit-content;
+  text-align: justify;
+  border: 5px solid rgb(255, 144, 40);
+}
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 100%) {
+  .flex-container {
+      flex-direction: column;
+      align-items: center;
+  }
+  #wrapper, .box {
+      width: 100%;
+  }
+  #imgBox {
+      height: 40vh;
+  }
+}
+
+.athlete-image {
+  float: right;
+  width: 25%; /* Adjust as needed */
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-left: 20px;
+  border: 10px solid rgb(0, 0, 0);
+}
+
+.scroll-box {
+  height: 700px;       /* Set the desired height */
+  overflow-y: scroll;  /* Add vertical scrollbar */
+}
+
+
+
+
+
+
+
+
+

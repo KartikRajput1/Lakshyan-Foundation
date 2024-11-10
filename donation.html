@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="index.js" ></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Help Us</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+  <style>
+.title {
+	color: #5C6AC4;
+}
+
+  </style>
+  <script>
+    function showTime() {
+	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
+}
+showTime();
+setInterval(function () {
+	showTime();
+}, 1000);
+  </script>
+</head>
+<body class="bg-gray-100">
+  <div class="scroll-up-btn">
+    <i class="fas fa-angle-up"></i>
+  </div>
+
+    <nav class="navbar" style="padding-left: 4%; padding-right: 4%; position: sticky;">
+        <div class="navbar-left">
+            <a href="index.html" class="navbar-icon">
+                <img src="Foundation logo - Final - white-12.png" alt="Icon">
+            </a>
+        </div>
+        <div class="navbar-center">
+            <ul class="navbar-menu">
+                <li><a href="index.html"><strong>Home</strong></a></li>
+                <li><a href="about.html"><strong>About</strong></a></li>
+                <li><a href="athelets.html"><strong>Our Athelets</strong></a></li>
+                <li><a href="work.html"><strong>Work</strong></a></li>
+                <li><a href="contact.html"><strong>Contact Us</strong></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <a href="donation.html" class="donate-button">Donate</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="index.html"><strong>Home</strong></a></li>
+        <li><a href="about.html"><strong>About</strong></a></li>
+        <li><a href="athelets.html"><strong>Our Athelets</strong></a></li>
+        <li><a href="work.html"><strong>Work</strong></a></li>
+        <li><a href="contact.html"><strong>Contact Us</strong></a></li>
+      </ul>
+    </div>
+    
+    
+    <script>
+    // Toggle Mobile Menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    // Toggle menu on click
+    hamburger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+    });
+    </script>
+    <section class="flex items-center justify-center min-h-screen p-4">
+        <div class="w-full max-w-md bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Make a Donation</h2>
+            <form action="https://fabform.io/f/your-form-id" method="post">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                    <input type="text" id="name" name="name" class="mt-2 w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="mt-2 w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="amount" class="block text-sm font-medium text-gray-700">Donation Amount(Rs)</label>
+                    <input type="number" id="amount" name="amount" min="1" class="mt-2 w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Enter amount" required>
+                </div>
+                <!-- <div class="mb-4">
+                    <label for="payment-method" class="block text-sm font-medium text-gray-700">Payment Method</label>
+                    <select id="payment-method" name="payment-method" class="mt-2 w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                        <option value="credit-card">Credit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="bank-transfer">Bank Transfer</option>
+                    </select>
+                </div> -->
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message or Dedication (Optional)</label>
+                    <textarea id="message" name="message" rows="3" class="mt-2 w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Write a message or dedication..."></textarea>
+                </div>
+                <div class="mt-6">
+                    <button type="submit" class="w-full px-4 py-2 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500">Donate Now</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="content">
+          <div class="top">
+            <div class="logo-details" style="display: flex; flex-direction: row; text-align: center; justify-content: center;">
+              <img src="Foundation logo - Final - white-12.png" style="height: 90px;">
+              <span class="logo_name" style="padding-top: 30px;">&nbsp; &nbsp;Lakshyan Foundation</span>
+            </div>
+            <div class="media-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="link-boxes">
+            <ul class="box">
+              <li class="link_name">Quick Links</li>
+              <li><a href="about.html">About US</a></li>
+              <li><a href="work.html">Our Work</a></li>
+              <li><a href="donation.html">Donate</a></li>
+             
+            </ul>
+            <ul class="box">
+              <li class="link_name">Contact info</li>
+              <li><a href="https://maps.app.goo.gl/HdWMd3FMfgdm2P1Y9" style="text-align: justify;">LakshyanAcademy of Sports Pvt. Ltd,No.126/5,Sulikunte Village,
+                SarjapurMain Road,
+                Varthur,Hobli,
+                Bangalore- 562125<br>
+                +917022314523
+                +918069031500
+                www.lakshyanfoundation.com</a></li>
+              
+            </ul>
+           
+            <ul class="box input-box">
+              <li class="link_name">Subscribe</li>
+              <li><input type="text" placeholder="Enter your email"></li>
+              <li><input type="button" value="Subscribe"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom-details">
+          <div class="bottom_text">
+            <span class="copyright_text">Copyright © 2024 <a href="#">Lakshyan Foundation.</a>All rights reserved</span>
+            <span class="policy_terms">
+              <a href="#">Privacy policy</a>
+              <a href="#">Terms & condition</a>
+            </span>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
